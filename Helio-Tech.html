@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelioTech Produkt</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ergänzung für die Bildreihe */
+        .product-gallery {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background: #191919;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(255, 131, 0, 0.10);
+            padding: 1.5rem 1rem 1rem 1rem;
+            max-width: 270px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 200px;
+            margin: 0 auto 1rem auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            color: #ff8300;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .product-facts {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 900px) {
+            .product-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HelioTech</h1>
+            <p>Innovative Solartechnologie für eine nachhaltige Zukunft</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produkt">Produkt</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="produkt" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Unsere Produkte</h2>
+                    <p>Die leistungsfähigste Solartechnologie am Markt!</p>
+                </div>
+                <div class="product-gallery">
+                    <div class="product-item">
+                        <img src="Bild.jpg" alt="HelioPhone">
+                        <div class="product-title">HelioPhone</div>
+                        <div class="product-facts">
+                            <ul style="text-align:left; margin-left:1em;">
+                                <li>100% solarbetrieben – kein Aufladen nötig</li>
+                                <li>6,7" AMOLED-Display, 120 Hz</li>
+                                <li>Wasser- & staubdicht (IP68)</li>
+                                <li>24h Schnelllade-Reserve</li>
+                                <li>CO₂-neutral produziert</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="Laptop.jpg" alt="HelioBook">
+                        <div class="product-title">HelioBook</div>
+                        <div class="product-facts">
+                            <ul style="text-align:left; margin-left:1em;">
+                                <li>Solarpanel im Gehäusedeckel integriert</li>
+                                <li>Bis zu 15h Laufzeit ohne Steckdose</li>
+                                <li>Ultra-leicht: 1,2 kg</li>
+                                <li>15,6" QHD-Display, Touchscreen</li>
+                                <li>100% recyceltes Aluminium</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="watch.jpg" alt="HelioWatch">
+                        <div class="product-title">HelioWatch</div>
+                        <div class="product-facts">
+                            <ul style="text-align:left; margin-left:1em;">
+                                <li>Solar-Ladeglas für Dauerbetrieb</li>
+                                <li>Herzfrequenz & Schlaftracking</li>
+                                <li>Wasserdicht bis 50m</li>
+                                <li>Benachrichtigungen & GPS</li>
+                                <li>Armband aus veganem Leder</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features">
+            <div class="container features">
+                <h2>Highlights & Vorteile</h2>
+                <ul>
+                    <li>🌞 Hohe Effizienz dank neuester Zelltechnologie</li>
+                    <li>🔋 Einfache Installation & Wartung</li>
+                    <li>🌱 Umweltfreundlich & langlebig</li>
+                    <li>📱 Überwachung per App</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="kontakt">
+            <div class="container">
+                <h2>Kontaktieren Sie uns</h2>
+                <form>
+                    <input type="text" placeholder="Ihr Name" required>
+                    <input type="email" placeholder="Ihre E-Mail" required>
+                    <textarea placeholder="Ihre Nachricht" required></textarea>
+                    <button type="submit">Absenden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 HelioTech Cooperation</p>
+            <p>Ferkschneider, Haase, König & Schönleitner</p>
+        </div>
+    </footer>
+</body>
+</html>
